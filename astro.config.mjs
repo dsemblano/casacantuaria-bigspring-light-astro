@@ -11,9 +11,6 @@ import config from "./src/config/config.json";
 
 // https://astro.build/config
 export default defineConfig({
-  redirects: {
-    '/admin': '/admin/index.html'
-  },
   site: config.site.base_url ? config.site.base_url : "http://examplesite.com",
   base: config.site.base_path ? config.site.base_path : "/",
   trailingSlash: config.site.trailing_slash ? "always" : "never",
